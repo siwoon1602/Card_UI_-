@@ -7,24 +7,21 @@
 }
 
 :root {
-  --nomal--color: #1a202c;
+  --background--color: #343f50;
   --positive--color: #439aff;
   --negative--color: #eb5757;
   --shadow--color: rgba(0, 0, 0, 0.2);
 }
-.nomal,
-.nomald,
-.yes,
-.del {
-  width: 88px;
-  height: 32px;
+button {
+  padding: 8px 25px;
   border: 1px solid #1a202c;
   font-family: "Pretendard-Regular";
   font-size: 12px;
   font-weight: 700;
-  background-color: var(--nomal--color);
+  line-height: 14.4px;
+  background-color: var(--background--color);
   color: #cbd5df;
-  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 2px 2px 0 0 rgba(255, 255, 255, 0.1);
 }
 
 .yes {
@@ -35,10 +32,13 @@
   color: var(--negative--color);
 }
 
-.nomal:hover,
-.nomal:active {
+.button:hover,
+.button:active {
   color: #fff;
   text-decoration: underline;
+}
+.button:hover {
+  box-shadow: inset 2px 2px 0 0 rgba(255, 255, 255, 0.2);
 }
 
 .nomald:disabled {
